@@ -28,11 +28,7 @@ public class LoginAction extends Action {
 		String role = lf.getRole();
 
 		Class.forName("oracle.jdbc.OracleDriver");
-//		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "delfina");
 		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl", "system", "delfina");
-//		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/XEPDB", "system", "delfina");
-
-		
 		PreparedStatement ps = con.prepareStatement("select * from login where username=? and pwd=? and userrole=?"); 
 
 		ps.setString(1, username);
