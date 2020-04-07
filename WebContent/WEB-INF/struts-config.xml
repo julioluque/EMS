@@ -1,0 +1,22 @@
+<!DOCTYPE struts-config PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+	"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="LF" type="com.jl.ems.main.LoginForm"></form-bean>
+	</form-beans>
+
+	<action-mappings>
+		<action path="/login" name="LF" input="/login.jsp" type="com.jl.ems.main.LoginAction">
+			<forward name="samepage" path="/login.jsp" />
+			<forward name="adminsuccess" path="/admin/adminsuccess.jsp" />
+			<forward name="employeesuccess" path="/employee/employeesuccess.jsp" />
+			<forward name="usersuccess" path="/user/useresuccess.jsp" />
+		</action>
+	</action-mappings>
+	
+	<message-resources parameter="resources/Messages"></message-resources>
+
+</struts-config>
