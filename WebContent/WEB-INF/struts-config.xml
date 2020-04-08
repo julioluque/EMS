@@ -13,7 +13,7 @@
 			<forward name="samepage" path="/login.jsp" />
 			<forward name="adminsuccess" path="/admin/adminsuccess.jsp" />
 			<forward name="employeesuccess" path="/employee/employeesuccess.jsp" />
-			<forward name="usersuccess" path="/user/useresuccess.jsp" />
+			<forward name="usersuccess" path="/user/usersuccess.jsp" />
 		</action>
 	</action-mappings>
 	
