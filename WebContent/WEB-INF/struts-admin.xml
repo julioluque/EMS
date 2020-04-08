@@ -1,0 +1,16 @@
+<!DOCTYPE struts-config PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+	"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+	<struts-config>
+	
+		<form-beans>
+			<form-bean name="AF" type="com.jl.ems.admin.AdminUSERUpdate"></form-bean>
+		</form-beans>
+	
+		<action-mappings>
+			<action path="/adminforward" forward="/adminsuccess.jsp"></action>
+			<action path="/adminupdate" name="AF" ></action>
+		</action-mappings>
+	
+	</struts-config>
