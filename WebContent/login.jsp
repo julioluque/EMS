@@ -14,6 +14,11 @@ ROLE:		<html:select property="role"><html:errors property="role"/>
 			</html:select>
 			<html:submit value="LOGIN.."/>
 
+
+FOR REDIRECT TO ADMIN :
+<a href="./admin/adminsuccess.jsp">SIMPLE CLICK</a>
+<html:link action="adminforward" module="/admin">CLICK USIN MODULE</html:link>
+
 </pre>
 
 </html:form>
